@@ -7,6 +7,7 @@ body{
     width:100%;
     background-image:url('../images/login_image.jpg');
     background-size: cover;
+    background-attachment: fixed;
     
 
 }
@@ -58,3 +59,27 @@ body{
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+ /* ........ CSS FOR RESPONSIVE........  */
+
+ 
+@media (max-width: 768px) { 
+    .login{
+        max-height:450px;
+        width:400px;
+    }
+    
+ }
+ @media (max-width: 576px) { 
+    .login{
+        max-height:450px;
+        width:300px;
+        margin-top: 180px;
+    }
+    .login h1{
+        font-size:25px;
+    }
+    
+    
+ }
+

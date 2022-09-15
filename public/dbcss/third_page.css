@@ -7,6 +7,7 @@ body{
     width:100%;
     background-image:url('../images/login_image.jpg');
     background-size: cover;
+    background-attachment: fixed;
     
 
 }
@@ -18,44 +19,90 @@ body{
     position: relative; 
     left: 50%;
     transform: translateX(-50%);
-    margin-top:80px;
+    margin-top:30px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding:20px 0px;
+}
+.login img{
+    height:100px;
+    width:100px;
 }
 .login h1{
-    margin:30px 0px;
+    margin:5px 0px 10px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.login p{
+.subhead{
     color:white;
-    padding:10px 0px;
-    font-size: 18px;
+    padding:2px 0px;
+    font-size: 16px;
+    font-weight: bold;
 }
+
 .login-details{
     margin:30px auto;
     width:75%;
     padding-bottom: 30px;
 }
 .login-details p{
-    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    padding:5px 0px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 .options{
     margin-top: 10px;
 }
 .options p{
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 .login-details select{
     height: 40px;
-    width: 70%;
+    width: 80%;
 }
-.login-details button{
-    width:15%;
-    height:35px;
-    background: none;
-    color:rgb(111, 195, 233) ;
-    border:2px solid rgb(111, 195, 233);
+.login button{
+    height:50px;
+    width:140px;
+    font-size: 16px;
+    font-weight: 100;
+    border-radius:60px;
+    color:white;
+    border:2px solid white;
+    background-color: black;
+    margin-top: 30px;
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+
+ /* ........ CSS FOR RESPONSIVE........  */
+
+ 
+ @media (max-width: 768px) { 
+    .login{
+        min-height:400px;
+        width:400px;
+    }
+    
+ }
+ @media (max-width: 576px) { 
+    .login{
+        min-height:400px;
+        width:350px;
+        margin-top:100px;
+    }
+    .login-details p{
+        padding:5px 0px 7px;
+        font-size: 12px;
+    }
+    .login-details select{
+        height:35px;
+        width: 85%;
+    }
+    
+ }
 
 
