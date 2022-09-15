@@ -28,13 +28,7 @@ class AuthenticationController extends Controller
         return redirect()->route('second_page');
     }
 
-    public function openthird()
-    {
-        if(isset($group_arr))
-        {
-            return view('')
-        }
-    }
+  
 
     
        
