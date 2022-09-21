@@ -18,9 +18,9 @@ use App\Http\Controllers\DownloadController;
 Route::get('first_page', function () {
 //     return view('first_page');
     return [
-        'payment Due',
-        'Be Professional'
-    ]
+        'project'=>'payment Due',
+        'message'=>'Be Professional'
+    ];
 });
 // Route::get('second_page', function () {
 //     return view('second_page');
