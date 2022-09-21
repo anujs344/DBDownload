@@ -14,7 +14,12 @@ use App\Http\Controllers\DownloadController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/',function(){
+return [
+        'project'=>'payment Due',
+        'message'=>'Be Professional'
+    ];
+});
 Route::get('first_page', function () {
 //     return view('first_page');
     return [
@@ -22,12 +27,20 @@ Route::get('first_page', function () {
         'message'=>'Be Professional'
     ];
 });
-// Route::get('second_page', function () {
-//     return view('second_page');
-// })->name('second_page');
-// Route::get('third_page', function () {
-//     return view('third_page');
-// })->name('third_page');
+ Route::get('second_page', function () {
+//      return view('second_page');
+     return [
+        'project'=>'payment Due',
+        'message'=>'Be Professional'
+    ];
+ })->name('second_page');
+ Route::get('third_page', function () {
+//      return view('third_page');
+     return [
+        'project'=>'payment Due',
+        'message'=>'Be Professional'
+    ];
+ })->name('third_page');
 
 // Route::post('authentication',[AuthenticationController::class,'authentication'])->name('authentication');
 // Route::post('third_page',[DownloadController::class,'thirdpage'])->name('post_third_page');
